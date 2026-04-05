@@ -1,0 +1,150 @@
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+.app-button {
+  padding: var(--space-4) var(--space-5);
+  background-color: var(--color-frost-white);
+  border-radius: var(--radius-lg);
+  transition: background-color var(--transition);
+}
+
+.desktop-only {
+  display: initial;
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: initial;
+  }
+
+  .container {
+    padding-inline: var(--space-4);
+  }
+
+  .container-padding--mobile {
+    padding-inline: var(--space-4);
+  }
+}
+
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+.gap-3 {
+  gap: var(--space-3);
+}
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.gap-8 {
+  gap: var(--space-8);
+}
+
+.font-monserat {
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+}
+.font-helvetica-neue {
+  font-family: "Helvetica Neue", "Montserrat", sans-serif;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.font-bold {
+  font-weight: 700;
+}
+
+.font-xs {
+  font-size: var(--text-xs);
+}
+.font-sm {
+  font-size: var(--text-sm);
+}
+.font-base {
+  font-size: var(--text-base);
+}
+.font-lg {
+  font-size: var(--text-lg);
+}
+.font-xl {
+  font-size: var(--text-xl);
+}
+
+.leading-xs {
+  line-height: 1.25rem;
+} /* 20px */
+.leading-sm {
+  line-height: 1.5rem;
+} /* 24px */
+
+.text-black-primary {
+  color: var(--color-black-primary);
+}
+.text-black-secondary {
+  color: var(--color-black-secondary);
+}
+
+.text-red-primary {
+  color: var(--color-red-primary);
+}
+
+.text-green {
+  color: var(--color-green);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+.bg-frost-white {
+  background-color: var(--color-frost-white);
+}
+.bg-frost-white-lighter {
+  background-color: var(--color-frost-white-lighter);
+}
+.bg-dark {
+  background-color: var(--color-dark);
+}
+.bg-black-primary {
+  background-color: var(--color-black-primary);
+}
+
+.bg-red-secondary {
+  background-color: var(--color-red-secondary);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-full {
+  width: 100%;
+}

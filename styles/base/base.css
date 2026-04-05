@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  color: inherit;
+  transition:
+    opacity var(--transition-color),
+    color var(--transition-color);
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+[data-hidden] {
+  display: none;
+}
